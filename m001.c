@@ -24,7 +24,22 @@
 
 int greatest (int a, int b, int c)
 {
-  return a;
+    int maior;
+
+  if (a>=b && a>=c)
+        maior=a;
+  else
+  {
+      if (b>=c && b>=a)
+      maior=b;
+
+        else
+        {
+            if (c>=a && c>b)
+                maior=c;
+        }
+  }
+  return maior;
 }
 
 /* Do not edit this function. */
