@@ -23,6 +23,8 @@
 
 int is_prime (int a)
 {
+  int x;
+  printf (" %s \n", (x%2)? "0" : "1");
   return 0;
 }
 
