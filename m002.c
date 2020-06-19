@@ -62,7 +62,7 @@ void sort (int *a, int *b, int *c)
 }
 
 
-Do not edit this function. */
+/*Do not edit this function. */
 
 int main (int argc, char **argv)
 {
