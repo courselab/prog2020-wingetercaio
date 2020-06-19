@@ -21,48 +21,48 @@
 
 #include <stdio.h>
 
-#define USAGE "m002 <num1> <num2> <num3>\n"
+#define USAGE "\n m002 <num1> <num2> <num3>\n"
 
 /* Sort three integers x, y, z in ascending order.*/
 
 void sort (int *a, int *b, int *c)
 {
-    int *x;
-    int *y;
-    int *z;
 
-    if (*x<*y && *y<*z)
-        printf ("%d %d %d", *x, *y ,*z);
+    if (*a<=*b && *b<=*c)
+        printf ("\n %d %d %d", *a, *b ,*c);
 
         else
         {
-            if(*x<*z && *z<*y)
-                printf ("%d %d %d", *x, *z, *y);
+            if(*a<=*c && *c<=*b)
+                printf ("\n %d %d %d", *a, *c, *b);
             
             else
             {
-                if (*y<*x && *x<*z)
-                    printf ("%d %d %d", *y, *x, *z);
+                if (*b<=*a && *a<=*c)
+                    printf ("\n %d %d %d", *b, *a, *c);
                 else
                 {
-                    if (*y<*z && *z<*x)
-                        printf ("%d %d %d", *y, *z, *x);
+                    if (*b<=*c && *c<=*a)
+                        printf ("\n %d %d %d", *b, *c, *a);
                     else
                     {
-                        if (*z<*x && *z<*y)
-                            printf ("%d %d %d", *z, *x, *y);
+                        if (*c<=*a && *a<=*b)
+                            printf ("\n %d %d %d", *c, *a, *b);
                         else
                         {
-                            if (*z<*y && *y<*x)
-                            printf ("%d %d %d", *z, *y, *x);
+                            if (*c<=*b && *b<=*a)
+                            printf ("\n %d %d %d", *c, *b, *a);
+                     
                         }
-                    } 
+                    }
+                                  
                 }
-            }
+            } 
         }
 }
 
-/* Do not edit this function. */
+
+Do not edit this function. */
 
 int main (int argc, char **argv)
 {
