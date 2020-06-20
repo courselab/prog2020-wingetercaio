@@ -25,15 +25,14 @@ int is_prime (int a)
 {
 int i; /*antecessores de a */
 int n;
-n=1; /*número de divisores*/
+n=0; /*número de divisores*/
 
-
-for (i=2 ;i<=a; i++){
+for (i=1 ;i<=a; i++){
 if (a%i == 0){
 n++;
-break;
 }
 }
+
 if (n==2)
 {
 return (1);
