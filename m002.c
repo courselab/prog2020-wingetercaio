@@ -27,40 +27,75 @@
 
 void sort (int *a, int *b, int *c)
 {
-  int x;
-  int y;
-  int z;
+  int t;
+  int j;
+  int i;
 
     if (*a<=*b && *b<=*c)
-        printf ("\n %d %d %d", *a, *b ,*c);
-        x == *a;
-        y == *b;
-        z == *c;
-
+        
+      {
+      *a = *a;
+      *b = *b;
+      *c = *c;
+      }
         else
         {
             if(*a<=*c && *c<=*b)
-                printf ("\n %d %d %d", *a, *c, *b);
-                x == *a;
-                y == *c;
-                z == *b;
-            
+        { 
+              *a = *a;
+              *b = *b;
+              *c = *c;
+        }
             else
             {
                 if (*b<=*a && *a<=*c)
-                    printf ("\n %d %d %d", *b, *a, *c);
+                {
+              
+                t = *b;
+                j = *a;
+                *a = t;
+                *b = j;
+                *c = *c;
+                }
                 else
                 {
                     if (*b<=*c && *c<=*a)
-                        printf ("\n %d %d %d", *b, *c, *a);
+                        
+                    {
+                    t = *b;
+                    j = *c;
+                    i = *a;
+                    *a = t;
+                    *b = j;
+                    *c = i;
+                    
+                    }
+
                     else
                     {
                         if (*c<=*a && *a<=*b)
-                            printf ("\n %d %d %d", *c, *a, *b);
+                            
+                        {
+                        t = *c;
+                        j = *a;
+                        i = *b;
+                        *a = t;
+                        *b = j;
+                        *c = i;
+                        
+                        
+                        }                      
                         else
                         {
                             if (*c<=*b && *b<=*a)
-                            printf ("\n %d %d %d", *c, *b, *a);
+                           
+                           t = *a;
+                           j = *c;
+                           *a = j;
+                           *b = *b;
+                           *c = t;
+                           
+                            
                      
                         }
                     }
