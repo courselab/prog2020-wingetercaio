@@ -21,7 +21,7 @@
 
 #include <stdio.h>
 
-#define USAGE "\n m002 <num1> <num2> <num3>\n"
+#define USAGE " m002 <num1> <num2> <num3>"
 
 /* Sort three integers x, y, z in ascending order.*/
 

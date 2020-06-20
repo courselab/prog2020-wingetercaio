@@ -23,9 +23,19 @@
 
 int is_prime (int a)
 {
-  int x;
-  printf (" %s \n", (x%2)? "0" : "1");
-  return 0;
+int i;
+int n;
+n=0;
+
+for (i=2 ;i<=a; i++)
+if (a%i == 0)
+n++;
+
+if (n<=2)
+printf ("1");
+else
+printf ("0");
+
 }
 
 #define USAGE "m003 <num>\n"
