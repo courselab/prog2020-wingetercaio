@@ -27,14 +27,14 @@ int i;
 int n;
 n=0;
 
-for (i=2 ;i<=a; i++)
+for (i==2 ;i<=a; i++)
 if (a%i == 0)
 n++;
 
-if (n<=2)
-printf ("1");
+if (n<2)
+return 1;
 else
-printf ("0");
+return 0;
 
 }
 

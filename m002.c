@@ -27,14 +27,23 @@
 
 void sort (int *a, int *b, int *c)
 {
+  int x;
+  int y;
+  int z;
 
     if (*a<=*b && *b<=*c)
         printf ("\n %d %d %d", *a, *b ,*c);
+        x == *a;
+        y == *b;
+        z == *c;
 
         else
         {
             if(*a<=*c && *c<=*b)
                 printf ("\n %d %d %d", *a, *c, *b);
+                x == *a;
+                y == *c;
+                z == *b;
             
             else
             {
