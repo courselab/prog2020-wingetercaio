@@ -25,21 +25,21 @@ int is_prime (int a)
 {
 int i; /*antecessores de a */
 int n;
-n=0; /*número de divisores*/
+n=1; /*número de divisores*/
 
-for (i=2 ;i<=a/2; i++){
+
+for (i=2 ;i<=a; i++){
 if (a%i == 0){
 n++;
 break;
 }
 }
-if (n==0)
+if (n==2)
 {
 return (1);
 }
 else
 return (0);
-
 }
 
 #define USAGE "m003 <num>\n"
