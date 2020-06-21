@@ -26,22 +26,32 @@
 #define MAX 256
 
 /* Count the number of letters in string s.*/
+int letras(char s)
+{
+    int n=0;
+    
+    if (s>= 'a' && s<='z')
+    {
+      n++;
+    }
+    if (s>= 'A' && s<='Z')
+    {
+      n++;
+    }
+    return n;
+  }
 
 int lettercount (char *s)
 {
   int count;
-  int a;
+  int i;
+  count=0;
 
- count = strlen (s);
-
- for (a=0; a < strlen(s); a++)
- {
-  if (s[a] == ' ')
+ for (i=0; i<strlen(s); i++)
 {
-    count-- ;
-} 
- }
-   return count;
+   count = count + letras(s[i]);
+}
+return count;
 }
 
 
