@@ -29,15 +29,18 @@
 
 int lettercount (char *s)
 {
-  int count=0;
-  int i=0;
+  int count;
+  int i;
 
-  count = strlen (s)-1;
- 
-  if (*s = ' ')
+ count = strlen (s)-1;
+
+ for (i=0; i < count; i++)
+ {
+  if (s[i] == ' ')
 {
     count-- ;
 } 
+ }
    return count;
 }
 
