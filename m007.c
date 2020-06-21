@@ -32,7 +32,7 @@ int lettercount (char *s)
   int count;
   int a;
 
- count = strlen (s)-1;
+ count = strlen (s);
 
  for (a=0; a < strlen(s); a++)
  {
