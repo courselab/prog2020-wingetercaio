@@ -34,29 +34,46 @@ int day_of_week (int day, int month)
  switch (month)
  {
    case 1: aux = day;
+   break;
    case 2: aux = day + 31;
+   break;
    case 3: aux = day + 60;
+   break;
    case 4: aux = day + 91;
+   break;
    case 5: aux = day + 121;
+   break;
    case 6: aux = day + 152;
+   break;
    case 7: aux = day + 182;
+   break;
    case 8: aux = day + 213;
+   break;
    case 9: aux = day + 244;
+   break;
    case 10: aux = day + 274;
+   break;
    case 11: aux = day + 305;
+   break;
    case 12: aux = day + 335;
     break;
  }
 
   switch (aux%7)
 {
-    case 0: i=3;
-    case 1: i=4;
-    case 2: i=5;
-    case 3: i=6;
-    case 4: i=0;
-    case 5: i=1;
-    case 6: i=2;
+    case 0: i=2;
+    break;
+    case 1: i=3;
+    break;
+    case 2: i=4;
+    break;
+    case 3: i=5;
+    break;
+    case 4: i=6;
+    break;
+    case 5: i=0;
+    break;
+    case 6: i=1;
     break;
 } 
 return i;
