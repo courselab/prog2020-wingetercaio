@@ -25,6 +25,25 @@
 
 void sort (int* vector, int n)
 {
+  int x[MAX], y[MAX];
+  int i,j,t,k;
+
+  for (i=0 ;i<n;i++)
+  x[i] = vector [i];
+
+  for (i=0 ; i<n ; i++)
+  {
+    t = 0;
+    for (j = 0; j<n ; j++)
+    {
+      if (x[j] >= x[t])
+      t=j;
+    }
+    y[i] = x[t];
+    x[t] = -3267;
+  }
+  for (i=0; i<n; i++)
+    vector[i] = y[n - 1 - i];
 }
 
 #define USAGE "m009 <num1> <nun2> ... \n"
