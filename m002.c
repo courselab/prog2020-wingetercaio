@@ -21,15 +21,92 @@
 
 #include <stdio.h>
 
-#define USAGE "m002 <num1> <num2> <num3>\n"
+#define USAGE " m002 <num1> <num2> <num3>"
 
 /* Sort three integers x, y, z in ascending order.*/
 
 void sort (int *a, int *b, int *c)
 {
+  int t;
+  int j;
+  int i;
+
+    if (*a<=*b && *b<=*c)
+        
+      {
+      *a = *a;
+      *b = *b;
+      *c = *c;
+      }
+        else
+        {
+            if(*a<=*c && *c<=*b)
+        { 
+              *a = *a;
+              *b = *b;
+              *c = *c;
+        }
+            else
+            {
+                if (*b<=*a && *a<=*c)
+                {
+              
+                t = *b;
+                j = *a;
+                *a = t;
+                *b = j;
+                *c = *c;
+                }
+                else
+                {
+                    if (*b<=*c && *c<=*a)
+                        
+                    {
+                    t = *b;
+                    j = *c;
+                    i = *a;
+                    *a = t;
+                    *b = j;
+                    *c = i;
+                    
+                    }
+
+                    else
+                    {
+                        if (*c<=*a && *a<=*b)
+                            
+                        {
+                        t = *c;
+                        j = *a;
+                        i = *b;
+                        *a = t;
+                        *b = j;
+                        *c = i;
+                        
+                        
+                        }                      
+                        else
+                        {
+                            if (*c<=*b && *b<=*a)
+                           
+                           t = *a;
+                           j = *c;
+                           *a = j;
+                           *b = *b;
+                           *c = t;
+                           
+                            
+                     
+                        }
+                    }
+                                  
+                }
+            } 
+        }
 }
 
-/* Do not edit this function. */
+
+/*Do not edit this function. */
 
 int main (int argc, char **argv)
 {

@@ -23,7 +23,22 @@
 
 int is_prime (int a)
 {
-  return 0;
+int i; /*antecessores de a */
+int n;
+n=0; /*número de divisores*/
+
+for (i=1 ;i<=a; i++){
+if (a%i == 0){
+n++;
+}
+}
+
+if (n==2)
+{
+return (1);
+}
+else
+return (0);
 }
 
 #define USAGE "m003 <num>\n"

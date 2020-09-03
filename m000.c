@@ -16,16 +16,33 @@
 
  */
 
-#include <stdio.h>
-#include <stdlib.h>
+int np (char c)
+{
+    int n;
+    if ((c >= 'a') && (c <= 'z'))
+        n = (c -'a')%9 + 1;
+    else
 
-#define MAX 255
 
-/* Write the number 'n' in Roman numerals.*/
+
+    if ((c >='A')&&(c<='Z'))
+        n = (c -'a' + 32)%9 + 1;
+    else
+        n = 0;
+
+    return n;
+}
 
 int pitagorean (char *s)
 {
-  return 0;
+  int i=0, count =0;
+    while (s[i]!=0 )
+    {
+      count = count + np(s[1]);
+      i++;
+    }
+return count;
+
 }
 
 /* Do not edit function main. */
